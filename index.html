@@ -3,91 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Silentmussle913's Profile</title>
-  
-  <!-- Include Font -->
+  <title>Silentmussle's Developer Hub</title>
   <style>
-    @font-face {
-      font-family: 'MinecraftFive';
-      src: url('MinecraftFivev2-Regular.woff2') format('woff2'),
-           url('MinecraftFivev2-Regular.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    /* Background and Font Styles */
-    body {
-      font-family: 'MinecraftFive', serif;
-      color: #d3d3d3;
+    * {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-image: url('https://wallpaperaccess.com/full/4003608.jpg'); /* RTX Minecraft Background */
-      background-size: cover;
-      background-position: center;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 20px 10px;
       text-align: center;
     }
 
-    /* Overlay to darken background image */
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-      z-index: -1;
+    header h1 {
+      font-size: 2.5em;
     }
 
-    /* Content Box Styling */
-    .content {
-      background-color: rgba(34, 34, 34, 0.8);
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-      max-width: 600px;
-    }
-
-    /* Header and Subtitle Styles */
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      color: #b0b0b0; /* Grayish text for header */
-    }
-
-    p {
+    header p {
       font-size: 1.2em;
-      line-height: 1.5;
-      color: #d3d3d3; /* Grayish text for paragraphs */
     }
 
-    /* Button Styling */
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: #0078d7;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 10px 0 20px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
     .button {
       display: inline-block;
-      margin-top: 20px;
       padding: 10px 20px;
-      background-color: #4a4a4a; /* Dark gray button */
-      color: #d3d3d3;
+      margin-top: 20px;
+      background-color: #0078d7;
+      color: white;
+      text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s;
+      transition: background 0.3s;
     }
 
     .button:hover {
-      background-color: #666666; /* Slightly lighter gray on hover */
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Silentmussle913</h1>
-    <p>Hello! I'm Silentmussle913, an avid Minecraft player who enjoys exploring the worlds of Zeqa and Hive. I also have a passion for developing Discord bots that connect with MCPE (Minecraft Pocket Edition) servers, allowing for enhanced gameplay and server interactions. If you're into Minecraft or interested in custom Discord bot solutions, let’s connect!</p>
-    <a href="https://discordapp.com/users/1088468521652068423" class="button">Connect with me on Discord</a>
-  </div>
+  <header>
+    <h1>Silentmussle's Developer Hub</h1>
+    <p>Tools and Programs for Minecraft Communities</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Zeqa Terminal</h2>
+      <p>
+        A terminal-based program for Minecraft server utilities, focused on the Zeqa Network. Simplify server management and player tracking with powerful tools.
+      </p>
+      <h3>Features:</h3>
+      <ul>
+        <li>Get online players from Minecraft servers</li>
+        <li>Fetch server details including MOTD, plugins, and version</li>
+        <li>Access Bedrock server software download links</li>
+        <li>Zeqa Network utilities like player tracking and lobby status</li>
+      </ul>
+      <a href="https://github.com/Silentmussle913/zeqa-terminal" class="button" target="_blank">Visit Zeqa Terminal</a>
+    </section>
+
+    <section>
+      <h2>BDS-Manager</h2>
+      <p>
+        A lightweight and efficient tool for managing Bedrock Dedicated Servers (BDS), featuring built-in Playit protocol for seamless tunneling.
+      </p>
+      <h3>Features:</h3>
+      <ul>
+        <li>Simplified server setup and management</li>
+        <li>Automatic tunneling with Playit protocol</li>
+        <li>Customizable configurations</li>
+        <li>Efficient resource management</li>
+      </ul>
+      <a href="https://github.com/Silentmussle913/BDS-Manager" class="button" target="_blank">Visit BDS-Manager</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 Silentmussle913. Built with ❤️ for the Minecraft community.
+      Check out my projects on <a href="https://github.com/Silentmussle913" target="_blank">GitHub</a>.
+    </p>
+  </footer>
 </body>
 </html>
