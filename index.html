@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Silentmussle913's Profile</title>
   
-  <!-- Custom Font -->
+  <!-- Include Font -->
   <style>
     @font-face {
-      font-family: 'MCFIVE';
-      src: url('MCFIVE.woff2') format('woff2'),
-           url('MCFIVE.woff') format('woff');
+      font-family: 'MinecraftFive';
+      src: url('MinecraftFivev2-Regular.woff2') format('woff2'),
+           url('MinecraftFivev2-Regular.woff') format('woff');
       font-weight: normal;
       font-style: normal;
     }
 
-    /* General Styles */
+    /* Background and Font Styles */
     body {
-      font-family: 'MCFIVE', serif;
+      font-family: 'MinecraftFive', serif;
       color: #d3d3d3;
       margin: 0;
       padding: 0;
@@ -31,6 +31,7 @@
       text-align: center;
     }
 
+    /* Overlay to darken background image */
     body::before {
       content: "";
       position: absolute;
@@ -38,10 +39,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
       z-index: -1;
     }
 
+    /* Content Box Styling */
     .content {
       background-color: rgba(34, 34, 34, 0.8);
       padding: 30px;
@@ -50,22 +52,25 @@
       max-width: 600px;
     }
 
+    /* Header and Subtitle Styles */
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
-      color: #b0b0b0;
+      color: #b0b0b0; /* Grayish text for header */
     }
 
     p {
       font-size: 1.2em;
       line-height: 1.5;
+      color: #d3d3d3; /* Grayish text for paragraphs */
     }
 
+    /* Button Styling */
     .button {
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
-      background-color: #4a4a4a;
+      background-color: #4a4a4a; /* Dark gray button */
       color: #d3d3d3;
       font-weight: bold;
       border-radius: 5px;
@@ -74,7 +79,7 @@
     }
 
     .button:hover {
-      background-color: #666666;
+      background-color: #666666; /* Slightly lighter gray on hover */
     }
   </style>
 </head>
